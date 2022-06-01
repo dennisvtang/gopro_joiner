@@ -35,7 +35,7 @@ class Joiner:
             for file in sorted(files):
                 print(f'file: {file}')
 
-                regex_match = re.match(r"(.*_)(\d{4})_(\d{3})\.mp4", file, re.I)
+                regex_match = re.search(r"(.*_)(\d{4})_(\d{3})\.mp4", file, re.I)
                 if regex_match:
                     print('matched regex 1.')
 
@@ -43,7 +43,7 @@ class Joiner:
                     video_number = regex_match.group(2)
                     chapter = regex_match.group(3)
                 else:
-                    regex_match = re.match(r"(GP|GH|GX)(\d{2})(\d{4})\.mp4", file, re.I)
+                    regex_match = re.search(r"(GP|GH|GX)(\d{2})(\d{4})\.mp4", file, re.I)
 
                     if regex_match:
                         print('matched regex 2')
