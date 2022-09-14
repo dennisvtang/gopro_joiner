@@ -1,3 +1,5 @@
+# Archived as of 2022/09/14.
+
 GoPro joiner python script
 ======
 **gopro_joiner** is a script to combine, rename and compress gopro videos. It is just something I hacked together because the file naming convention from GoPro is quite messed up.
